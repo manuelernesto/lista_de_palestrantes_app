@@ -7,8 +7,8 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="io.github.manuelernesto.listofspeakers.ui.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/to_speakersFragment"
             app:destination="@id/speakersFragment" />
@@ -16,8 +16,8 @@
     <fragment
         android:id="@+id/speakersFragment"
         android:name="io.github.manuelernesto.listofspeakers.ui.SpeakersFragment"
-        android:label="fragment_speakers"
-        tools:layout="@layout/fragment_speakers" >
+        android:label="Palestrante"
+        tools:layout="@layout/fragment_speakers">
         <action
             android:id="@+id/to_homeFragment"
             app:destination="@id/homeFragment" />

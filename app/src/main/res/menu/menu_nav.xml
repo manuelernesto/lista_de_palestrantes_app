@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/homeFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_dashboard"
+        android:title="@string/txt_home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/speakersFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_people"
+        android:orderInCategory="100"
+        android:title="@string/txt_palestrante"
+        app:showAsAction="ifRoom" />
+
+
+</menu>
