@@ -19,13 +19,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        mNavController =   Navigation.findNavController(this, R.id.nav_host_fragment)
+        mNavController = Navigation.findNavController(this, R.id.nav_host_fragment)
 
         NavigationUI.setupWithNavController(bottom_navigation_view, mNavController)
 
-        NavigationUI.setupWithNavController(nav_view, mNavController)
-
-        NavigationUI.setupActionBarWithNavController(this, mNavController, drawer_layout)
+//        NavigationUI.setupActionBarWithNavController(this, mNavController, drawer_layout)
     }
 
     override fun onSupportNavigateUp() = NavigationUI.navigateUp(mNavController, drawer_layout)

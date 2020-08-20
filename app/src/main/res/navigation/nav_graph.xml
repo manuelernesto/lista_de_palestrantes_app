@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="io.github.manuelernesto.listofspeakers.ui.HomeFragment"
-        android:label="Home"
+        android:label="@string/txt_listagem"
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/to_speakersFragment"
@@ -16,7 +16,7 @@
     <fragment
         android:id="@+id/speakersFragment"
         android:name="io.github.manuelernesto.listofspeakers.ui.SpeakersFragment"
-        android:label="Palestrante"
+        android:label="@string/txt_cadastro"
         tools:layout="@layout/fragment_speakers">
         <action
             android:id="@+id/to_homeFragment"

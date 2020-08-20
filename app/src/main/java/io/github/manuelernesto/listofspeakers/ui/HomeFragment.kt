@@ -17,11 +17,6 @@ class HomeFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_home, container, false).apply {
 
-           val btnPalestrante = findViewById<Button>(R.id.btnPalestrante)
-            btnPalestrante.setOnClickListener {
-                findNavController().navigate(R.id.to_speakersFragment)
-            }
-
         }
     }
 }
