@@ -12,6 +12,7 @@
         <action
             android:id="@+id/to_speakersFragment"
             app:destination="@id/speakersFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/speakersFragment"
@@ -21,5 +22,10 @@
         <action
             android:id="@+id/to_homeFragment"
             app:destination="@id/homeFragment" />
+        <argument
+            android:name="Palestrante"
+            android:defaultValue="@null"
+            app:argType="io.github.manuelernesto.listofspeakers.data.Palestrante"
+            app:nullable="true" />
     </fragment>
 </navigation>

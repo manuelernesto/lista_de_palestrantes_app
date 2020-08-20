@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.SpeakersFragment" >
+    tools:context=".ui.SpeakersFragment">
 
     <EditText
-        android:hint="@string/txt_palestrante"
         android:id="@+id/room_et_nome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -17,18 +16,19 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:ems="10"
+        android:hint="@string/txt_palestrante"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:hint="@string/txt_tecnologia"
         android:id="@+id/room_et_tecnologia"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="@string/txt_tecnologia"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/room_et_nome"
         app:layout_constraintStart_toStartOf="@+id/room_et_nome"
@@ -45,14 +45,25 @@
         app:layout_constraintTop_toBottomOf="@+id/room_et_topico" />
 
     <EditText
-        android:hint="@string/txt_topico"
         android:id="@+id/room_et_topico"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="@string/txt_topico"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/room_et_tecnologia"
         app:layout_constraintStart_toStartOf="@+id/room_et_tecnologia"
         app:layout_constraintTop_toBottomOf="@+id/room_et_tecnologia" />
+
+    <Button
+        android:id="@+id/room_btn_apagar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/txt_apagar"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/room_btn_salvar"
+        app:layout_constraintStart_toStartOf="@+id/room_btn_salvar"
+        app:layout_constraintTop_toBottomOf="@+id/room_btn_salvar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
